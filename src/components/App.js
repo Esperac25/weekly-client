@@ -14,7 +14,6 @@ import Header from './Header';
 
 export default function App(){
     return (
-      <Fragment>
         <div className="container">
         <div className='app'>
             <Header />
@@ -27,7 +26,6 @@ export default function App(){
             <Footer />
           </div>
         </div>
-      </Fragment>
     );
 }
 
