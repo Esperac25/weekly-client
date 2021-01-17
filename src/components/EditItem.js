@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from "react";
+import config from '../config';
 
-const EditTodo = ({ todo }) => {
-  const [description, setDescription] = useState(todo.description);
+const EditItem = ({ item }) => {
+  const [description, setDescription] = useState(item.description);
 
   //edit description function
 
@@ -10,7 +11,7 @@ const EditTodo = ({ todo }) => {
     try {
       const body = { description };
       const response = await fetch(
-        `http://localhost:5000/todos/${todo.todo_id}`,
+        `${config.API_URL}/items/${item.item_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -18,7 +19,7 @@ const EditTodo = ({ todo }) => {
         }
       );
 
-      window.location = "/";
+      window.location = "/home";
     } catch (err) {
       console.error(err.message);
     }
@@ -30,7 +31,7 @@ const EditTodo = ({ todo }) => {
         type="button"
         className="btn btn-warning"
         data-toggle="modal"
-        data-target={`#id${todo.todo_id}`}
+        data-target={`#id${item.item_id}`}
       >
         Edit
       </button>
@@ -39,19 +40,19 @@ const EditTodo = ({ todo }) => {
         id = id10
       */}
       <div
-        classNameName="modal"
-        id={`id${todo.todo_id}`}
-        onClick={() => setDescription(todo.description)}
+        className="modal"
+        id={`id${item.item_id}`}
+        onClick={() => setDescription(item.description)}
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h4 className="modal-title">Edit Todo</h4>
+              <h4 className="modal-title">Edit Item</h4>
               <button
                 type="button"
                 className="close"
                 data-dismiss="modal"
-                onClick={() => setDescription(todo.description)}
+                onClick={() => setDescription(item.description)}
               >
                 &times;
               </button>
@@ -79,7 +80,7 @@ const EditTodo = ({ todo }) => {
                 type="button"
                 className="btn btn-danger"
                 data-dismiss="modal"
-                onClick={() => setDescription(todo.description)}
+                onClick={() => setDescription(item.description)}
               >
                 Close
               </button>
@@ -91,4 +92,4 @@ const EditTodo = ({ todo }) => {
   );
 };
 
-export default EditTodo;
+export default EditItem;
