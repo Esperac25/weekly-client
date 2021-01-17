@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import config from '../config';
 
 import EditItem from "./EditItem";
 
@@ -10,7 +9,7 @@ const Home = () => {
 
   const deleteItem = async id => {
     try {
-      const deleteItem = await fetch(`${config.API_URL}/items/${id}`, {
+      const deleteItem = await fetch(`http://localhost:5000/items/${id}`, {
         method: "DELETE"
       });
 
@@ -22,7 +21,7 @@ const Home = () => {
 
   const getItems = async () => {
     try {
-      const response = await fetch(`${config.API_URL}/items`);
+      const response = await fetch(`http://localhost:5000/items`);
       const jsonData = await response.json();
 
       setItems(jsonData);

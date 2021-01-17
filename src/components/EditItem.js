@@ -11,7 +11,7 @@ const EditItem = ({ item }) => {
     try {
       const body = { description };
       const response = await fetch(
-        `${config.API_URL}/items/${item.item_id}`,
+        `http://localhost:5000/items/${item.item_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
