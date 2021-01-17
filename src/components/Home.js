@@ -3,7 +3,7 @@ import config from '../config';
 
 import EditItem from "./EditItem";
 
-const ListItems = () => {
+const Home = () => {
   const [items, setItems] = useState([]);
 
   //delete item function
@@ -89,4 +89,4 @@ const ListItems = () => {
   );
 };
 
-export default ListItems;
+export default Home;
