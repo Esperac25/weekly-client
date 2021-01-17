@@ -21,7 +21,7 @@ export default class LandingPage extends Component{
                         <button className='button' type='submit'><Link className='color-fix' to='/home'>Home</Link></button> 
                         </li>
                         <li>
-                        <button className='button' type='submit'><Link to='/add-item' className='color-fix'>Add Item</Link></button>
+                        <button className='button' type='submit'><Link to='/items/add-item' className='color-fix'>Add Item</Link></button>
                         </li>
                     </ul> 
                     </div>

@@ -37,8 +37,8 @@ const Home = () => {
 
   console.log(items);
 
-  const itemsLeft = this.state.items.length
-  const itemNoun = itemsLeft.length !== 1 ? 'items' : 'item';
+  // const itemsLeft = this.state.items.length
+  // const itemNoun = itemsLeft.length !== 1 ? 'items' : 'item';
   return (
     <Fragment>
       {" "}
@@ -47,7 +47,7 @@ const Home = () => {
       <div className='total'>
                 <section>
                 <div>
-                    <p className='total-p'>You have {itemsLeft} {itemNoun} left to do this week</p>
+                    {/* <p className='total-p'>You have {itemsLeft} {itemNoun} left to do this week</p> */}
                     <p className='total-p'>Keep it up!</p>
                 </div>
                 </section>
