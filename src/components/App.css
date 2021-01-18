@@ -3,6 +3,7 @@ header{
 }
 
 .header-logo{
+  margin-top: 0;
   font-family: 'Concert One';  
   font-size: 50px;
   text-align: center;
@@ -10,6 +11,23 @@ header{
   text-shadow: -1px 0 #003D52, 0 3px #003D52, 2px 0 #003D52, 0 -1px #003D52
 }
 .header-link {
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
+.nav{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+.nav-ul {
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -1px 0 #4286b9, 0 2px #4286b9, 2px 0 #4286b9, 0 -1px #4286b9;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
