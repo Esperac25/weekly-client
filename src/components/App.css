@@ -76,3 +76,36 @@ header{
     border-radius: 5px;
 }
 
+.welcome{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.landing-buttons{
+    list-style-type: none;
+    text-align: center;
+}
+
+.button{
+    font-weight: bolder;
+    border-radius: 15px;
+    color:  #003D52;
+    background-color: #a9d0f0;
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    font-size: 15px;
+    border-color: #fff;
+    font-family: 'Sofia';
+}
+
+.color-fix{
+    color: #003D52;
+    text-decoration: none;
+}
+
+.form{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}

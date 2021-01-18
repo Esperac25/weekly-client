@@ -8,12 +8,12 @@ export default class LandingPage extends Component{
             <div>
               
                  <h2 className='welcome'>Welcome to Weekly!</h2>
-                    <div className='box'>
+                    <div className='box-2'>
                         <div className='landing-content'><p>Weekly was created to</p><p>provide users with a concise </p><p>way to plan their week</p></div>
                         <br/>
-                        <div className='landing-content'><p>Easily add, edit and delete</p> <p>items from your weekly view</p></div>
+                        <div className='landing-content'><p>Easily add and delete</p> <p>items from your weekly view</p></div>
                         <br/>
-                        <div className='landing-content'><p>To get started, simply click the home tab to view your weekly todo list, click the add tab to add a new item.</p></div>
+                        <div className='landing-content'><p>To get started, simply click the </p><p>home tab to view your weekly </p><p>todo list, click the add tab to add</p><p> a new item.</p></div>
                     </div>
                     <div>
                     <ul className='landing-buttons'>

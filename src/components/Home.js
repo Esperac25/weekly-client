@@ -52,7 +52,7 @@ const Home = () => {
             </div>
       </div>
       <div className='box-2'>
-      <table className="table mt-5 text-center">
+      <table>
         <tbody>
           {items.map(item => (
             <tr key={item.item_id}>
@@ -62,7 +62,7 @@ const Home = () => {
               </td>
               <td>
                 <button
-                  className="btn btn-danger"
+                  className="button"
                   onClick={() => deleteItem(item.item_id)}
                 >
                   Delete

@@ -26,11 +26,11 @@ const AddItem = () => {
       <form className='' onSubmit={onSubmitForm}>
         <input
           type="text"
-          className="form-control"
+          className='form'
           value={description}
           onChange={e => setDescription(e.target.value)}
         />
-        <button>Add</button>
+        <button className='button'>Add</button>
       </form>
       </div>
       
