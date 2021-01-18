@@ -8,6 +8,7 @@ header{
     color: #003D52;
     text-align: center;
     margin-top: 0;
+    font-size: 35px;
 }
 
 .header-link {
@@ -16,6 +17,57 @@ header{
 }
 
 .nav{
-    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
     
+.link{
+    text-decoration: none;
+    margin: 0px 15px 0 0px;
+    color: #003D52;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.about-label{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.box-2{
+    text-align: center;
+    width: 300px;
+    border-radius: 7px;
+    padding: 25px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D7EDFF;
+    font-weight: bold;
+}
+
+.footer{
+    text-align: center;
+    background-color: #D7EDFF;
+    font-weight: bold;
+    
+}
+
+.weekly-view-logo{
+    text-align: center;
+    font-size: 30px;
+}
+
+.total{ 
+    text-align: center;
+    font-weight: bold;
+}
+
+.add-logo{
+    text-align: center;
+}

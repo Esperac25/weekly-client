@@ -9,11 +9,11 @@ export default class NavBar extends Component{
        return(
            <div className='nav'>
            <ul className='nav'>
-           <li className='link'><Link to='/about'>About</Link></li>
+           <li><Link className='link' to='/about'>About</Link></li>
            <br></br>
-           <li className='link'> <Link to='/home'>Home</Link></li>
+           <li> <Link className='link' to='/home'>Home</Link></li>
            <br></br>
-           <li className='link'><Link to='/items/add-item'>Add Item</Link></li>
+           <li><Link className='link' to='/items/add-item'>Add Item</Link></li>
            </ul>
            </div>
        )

@@ -21,8 +21,9 @@ const AddItem = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center mt-5">Add Item</h1>
-      <form className="d-flex mt-5" onSubmit={onSubmitForm}>
+      <h1 className='add-logo'>Add Item</h1>
+      <div className='box-2'>
+      <form className='' onSubmit={onSubmitForm}>
         <input
           type="text"
           className="form-control"
@@ -31,6 +32,8 @@ const AddItem = () => {
         />
         <button className="btn btn-success">Add</button>
       </form>
+      </div>
+      
     </Fragment>
   );
 };

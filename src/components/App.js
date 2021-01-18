@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 //components
 
 import AddItem from "./AddItem";
-import EditItem from './EditItem';
 import About from './About';
 import Home from './Home';
 import LandingPage from './LandingPage';
@@ -20,7 +19,6 @@ export default function App(){
             <Route exact path='/' component={LandingPage} />
             <Route path='/home' component={Home}/>
             <Route exact path='/items/add-item' component={AddItem}/>
-            <Route path='/edit-item/:id' component={EditItem}/>
             <Footer />
           </div>
         </div>

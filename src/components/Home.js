@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 
-import EditItem from "./EditItem";
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -30,47 +29,36 @@ const Home = () => {
     }
   };
 
+
   useEffect(() => {
     getItems();
   }, []);
 
   console.log(items);
 
-  // const itemsLeft = this.state.items.length
-  // const itemNoun = itemsLeft.length !== 1 ? 'items' : 'item';
+  
   return (
     <Fragment>
       {" "}
       <div>
-      <h1>Weekly View</h1>
+      <h1 className='weekly-view-logo'>Weekly View</h1>
       <div className='total'>
                 <section>
-                <div>
-                    {/* <p className='total-p'>You have {itemsLeft} {itemNoun} left to do this week</p> */}
-                    <p className='total-p'>Keep it up!</p>
+                <div className='total'>
+                    <p>You have {items.length} items left to do this week</p>
+                    <p>Keep it up!</p>
                 </div>
                 </section>
             </div>
       </div>
+      <div className='box-2'>
       <table className="table mt-5 text-center">
-        <thead>
-          <tr>
-            <th>Description</th>
-            <th>Edit</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
         <tbody>
-          {/*<tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr> */}
           {items.map(item => (
             <tr key={item.item_id}>
               <td>{item.description}</td>
               <td>
-                <EditItem item={item} />
+              
               </td>
               <td>
                 <button
@@ -84,6 +72,7 @@ const Home = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </Fragment>
   );
 };

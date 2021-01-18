@@ -19,7 +19,7 @@ export default class About extends Component {
                         <div className='box-2'>
                         <h3 className='about-label'>How it started</h3>
                             <p>Weekly was first created as a capstone project for my engineering immersion course, but now it is publicly available for everyone to use!</p>
-                            <p>With Weekly, you can add items you need to complete in the upcoming week, edit the items, delete the items and reset the weekly view to start over for the next week.</p>
+                            <p>With Weekly, you can add items you need to complete in the upcoming week and delete the items to reset the weekly view to start over for the next week.</p>
                             <p>Sign up now to start planning your week with Weekly!</p>
                         </div>
                     </div>
