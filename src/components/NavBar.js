@@ -8,7 +8,7 @@ export default class NavBar extends Component{
     render(){
        return(
            <div className='nav'>
-           <ul className='nav-ul'>
+           <ul>
            <li className='link'><Link to='/about'>About</Link></li>
            <br></br>
            <li className='link'> <Link to='/home'>Home</Link></li>
