@@ -71,3 +71,8 @@ header{
 .add-logo{
     text-align: center;
 }
+
+.form-control{
+    border-radius: 5px;
+}
+
