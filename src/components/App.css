@@ -1,33 +1,26 @@
 header{
-    background-color: #368aca;
+    background-color: #D7EDFF;
+    margin-top: 0;
 }
-
 .header-logo{
-  margin-top: 0;
-  font-family: 'Concert One';  
-  font-size: 50px;
-  text-align: center;
-  color: #fff;
-  text-shadow: -1px 0 #003D52, 0 3px #003D52, 2px 0 #003D52, 0 -1px #003D52
-}
-.header-link {
-    text-decoration: none;   
+    font-family: 'Sofia';
+    text-decoration: 'none';
+    color: #003D52;
+    text-align: center;
+    margin-top: 0;
 }
 
+.header-link {
+    text-decoration: none;  
+    margin-top: 0;
+}
 .nav{
-    display: flex;
-    align-content: center;
-    flex-direction: row;
+    text-decoration: none;
 }
-.nav-ul {
-    list-style-type: none;
+.nav-ul{
+    text-decoration: none;
 }
+
 .link{
     text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: -1px 0 #4286b9, 0 2px #4286b9, 2px 0 #4286b9, 0 -1px #4286b9;
-    font-size: 15px;
-    justify-content: space-between;
 }
-
