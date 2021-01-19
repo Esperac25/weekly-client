@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-
+import config from './config';
 
 const AddItem = () => {
   const [description, setDescription] = useState("");
@@ -8,7 +8,7 @@ const AddItem = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch(`http://localhost:5000/items`, {
+      const response = await fetch(`${config.API_URL}/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
