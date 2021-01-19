@@ -19,7 +19,6 @@ const AddItem = () => {
       })
       addItems(response.data)
       setItems('')
-      setDescription('')
       window.location='/home'
     } catch (err) {
       console.error(err.message);
