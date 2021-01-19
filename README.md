@@ -18,7 +18,7 @@ Sign up now to start planning your week with Weekly!
 
 ### Landing Page 
 
-[landingpage.png](https://postimg.cc/wRVYkY2y)
+[![landingpage.png](https://i.postimg.cc/NLhGBgr4/landingpage.png)](https://postimg.cc/wRVYkY2y)
 
 ### About 
 [About!](Desktop/about.png)
