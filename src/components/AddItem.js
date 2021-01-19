@@ -1,6 +1,7 @@
 import React, { Fragment, useContext, useState } from "react";
 import config from './config';
 import {context} from './context';
+import history from '../history';
 
 const AddItem = () => {
   const [description, setDescription] = useState("");
@@ -19,7 +20,7 @@ const AddItem = () => {
       })
       addItems(response.data)
       setItems('')
-      .then( window.location='/home')
+      history.push('/home')
     } catch (err) {
       console.error(err.message);
     }
