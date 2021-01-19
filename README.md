@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Weekly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## A weekly planner
 
-## Available Scripts
+### Link to live app: https://weekly-client-app.vercel.app/
 
-In the project directory, you can run:
 
-### `npm start`
+## Project description:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Weekly was first created as a capstone project for my engineering immersion course, but now it is publicly available for everyone to use!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+With Weekly, you can add items you need to complete in the upcoming week and delete the items to reset the weekly view to start over for the next week.
 
-### `npm test`
+Sign up now to start planning your week with Weekly!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Landing Page 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[LandingPage!](Desktop/landing.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### About 
+[About!](Desktop/about.png)
 
-### `npm run eject`
+### Home 
+[Home!](Desktop/home.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Add Item
+[Add!](Desktop/Add.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Delete Item
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Delete!](Desktop/delete.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Technology Used
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Front-End: React.js, HTML5, CSS3
+    Back-End: PostgreSQL, Express.js, Node.js
