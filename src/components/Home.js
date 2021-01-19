@@ -8,7 +8,7 @@ const Home = () => {
 
   const deleteItem = async id => {
     try {
-      const deleteItem = await fetch(`${config.API_URL}/items/${id}`, {
+      await fetch(`${config.API_URL}/items/${id}`, {
         method: "DELETE"
       });
 
