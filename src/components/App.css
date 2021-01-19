@@ -39,7 +39,7 @@ header{
     
 }
 
-.box-2{
+.box-2, .box{
     text-align: center;
     width: 300px;
     border-radius: 7px;
@@ -50,6 +50,7 @@ header{
     background-color: #D7EDFF;
     font-weight: bold;
 }
+
 
 .footer{
     text-align: center;
@@ -110,3 +111,15 @@ header{
     border-radius: 5px;
 }
 
+
+@media all and (min-width: 500px){
+    .box-2{
+        width: 500px;
+        font-size: 20px;
+        height: 525px;
+    }
+    .form{
+        width: 200px;
+        height: 100px;
+    }
+}

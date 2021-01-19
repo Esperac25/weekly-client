@@ -30,7 +30,7 @@ const AddItem = () => {
 	return (
 		<Fragment>
 			<h1 className='add-logo'>Add Item</h1>
-			<div className='box-2'>
+			<div className='box'>
 				<form className='' onSubmit={onSubmitForm}>
 					<input
 						type='text'
