@@ -12,8 +12,10 @@ const AddItem = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
-      })
-     window.location='/home';
+      }); return response
+      .then(
+        window.location='/home'
+      )
     } catch (err) {
       console.error(err.message);
     }
