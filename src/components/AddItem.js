@@ -1,19 +1,26 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useContext, useState } from "react";
 import config from './config';
+import {context} from './context';
 
 const AddItem = () => {
   const [description, setDescription] = useState("");
+  const [items, setItems] = useState('');
+  const { addItems } = useContext(context)
 
-  const onSubmitForm =  e => {
+  
+  const onSubmitForm = async e => {
     e.preventDefault();
     try {
       const body = { description };
-      return fetch(`${config.API_URL}/items`, {
+      const response = await fetch(`${config.API_URL}/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       })
-      .then(window.location='/home')
+      addItems(response.data)
+      setItems('')
+      setDescription('')
+      window.location='/home'
     } catch (err) {
       console.error(err.message);
     }
