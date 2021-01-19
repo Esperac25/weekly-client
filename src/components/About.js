@@ -7,7 +7,7 @@ export default class About extends Component {
                 <section>
                     <div>
                         <h2 className='about-label'>About Weekly!</h2>
-                        <div className='box-2'>
+                        <div className='box'>
                         <h3 className='about-label'>The Creator</h3>
                             <p>Hello and welcome to Weekly! </p>
                             <p>I am Esperanza Cardenas, a fullstack software engineer based in Seattle,WA.</p>
@@ -16,7 +16,7 @@ export default class About extends Component {
                         
                         </div>
                         <br></br>
-                        <div className='box-2'>
+                        <div className='box'>
                         <h3 className='about-label'>How it started</h3>
                             <p>Weekly was first created as a capstone project for my engineering immersion course, but now it is publicly available for everyone to use!</p>
                             <p>With Weekly, you can add items you need to complete in the upcoming week and delete the items to reset the weekly view to start over for the next week.</p>
