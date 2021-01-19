@@ -4,11 +4,11 @@ import config from './config';
 const AddItem = () => {
   const [description, setDescription] = useState("");
 
-  const onSubmitForm = async e => {
+  const onSubmitForm = e => {
     e.preventDefault();
     try {
       const body = { description };
-      await fetch(`${config.API_URL}/items`, {
+      fetch(`${config.API_URL}/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
