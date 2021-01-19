@@ -1,48 +1,48 @@
-import React, { Fragment, useContext, useState } from "react";
-import config from './config';
-import {context} from './context';
+import React, { Fragment, useContext, useState } from 'react';
+import config from '../config';
+import { WeeklyContext } from '../WeeklyProvider';
 import history from '../history';
 
 const AddItem = () => {
-  const [description, setDescription] = useState("");
-  const [ setItems] = useState('');
-  const { addItems } = useContext(context)
+	const [description, setDescription] = useState('');
+	const context = useContext(WeeklyContext);
 
-  
-  const onSubmitForm = async e => {
-    e.preventDefault();
-    try {
-      const body = { description };
-      const response = await fetch(`${config.API_URL}/items`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body)
-      })
-      addItems(response.data)
-      setItems('')
-      history.push('/home')
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
+	const handleChange = (e) => setDescription(e.target.value);
 
-  return (
-    <Fragment>
-      <h1 className='add-logo'>Add Item</h1>
-      <div className='box-2'>
-      <form className='' onSubmit={onSubmitForm}>
-        <input
-          type="text"
-          className='form'
-          value={description}
-          onChange={e => setDescription(e.target.value)}
-        />
-        <button className='button'>Add</button>
-      </form>
-      </div>
-      
-    </Fragment>
-  );
+	const onSubmitForm = (e) => {
+		e.preventDefault();
+		const data = { description };
+		try {
+			fetch(`${config.API_URL}/items`, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(data)
+			})
+				.then((response) => response.json())
+				.then((data) => context.addItem(data));
+			setDescription('');
+			history.push('/home');
+		} catch (err) {
+			console.error(err.message);
+		}
+	};
+
+	return (
+		<Fragment>
+			<h1 className='add-logo'>Add Item</h1>
+			<div className='box-2'>
+				<form className='' onSubmit={onSubmitForm}>
+					<input
+						type='text'
+						className='form'
+						value={description}
+						onChange={handleChange}
+					/>
+					<button className='button'>Add</button>
+				</form>
+			</div>
+		</Fragment>
+	);
 };
 
 export default AddItem;
