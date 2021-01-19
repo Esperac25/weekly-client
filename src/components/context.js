@@ -17,6 +17,7 @@ export const ContextProvider = (props) => {
                 setItems,
                 description,
                 setDescription,
+                addItems,
             }}>
             {props.children}
         </context.Provider>
