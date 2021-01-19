@@ -21,17 +21,17 @@ Sign up now to start planning your week with Weekly!
 [![landingpage.png](https://i.postimg.cc/NLhGBgr4/landingpage.png)](https://postimg.cc/wRVYkY2y)
 
 ### About 
-[About!](Desktop/about.png)
+[![about.png](https://i.postimg.cc/CKMqWN0K/about.png)](https://postimg.cc/ZWgnN6Ck)
 
 ### Home 
-[Home!](Desktop/home.png)
+[![home.png](https://i.postimg.cc/C1zfKxzT/home.png)](https://postimg.cc/VrPNG1qD)
 
 ### Add Item
-[Add!](Desktop/Add.png)
+[![additem.png](https://i.postimg.cc/zG8bgjVk/additem.png)](https://postimg.cc/0bXyg7G6)
 
-### Delete Item
+### After Deleting an Item
 
-[Delete!](Desktop/delete.png)
+[![delete.png](https://i.postimg.cc/FKKYPHbd/delete.png)](https://postimg.cc/VJ3sv1Vm)
 
 ### Technology Used
 
