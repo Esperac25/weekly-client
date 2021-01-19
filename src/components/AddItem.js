@@ -4,7 +4,7 @@ import {context} from './context';
 
 const AddItem = () => {
   const [description, setDescription] = useState("");
-  const [items, setItems] = useState('');
+  const [ setItems] = useState('');
   const { addItems } = useContext(context)
 
   
