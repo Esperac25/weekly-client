@@ -13,12 +13,7 @@ const AddItem = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       })
-      .then((res) => {
-        if(!res.ok) return res.json().then((e) => Promise.reject(e))
-      })
-      .then((item) => {
-        this.props.history.push(`/items/${item.item_id}`);
-      })
+     window.location='/home';
     } catch (err) {
       console.error(err.message);
     }
