@@ -8,7 +8,7 @@ const AddItem = () => {
     e.preventDefault();
     try {
       const body = { description };
-      return await fetch(`${config.API_URL}/items`, {
+      return fetch(`${config.API_URL}/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
